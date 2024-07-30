@@ -1,0 +1,24 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-custom {
+    background-color: #007bff; /* Azul */
+    padding: 20px;
+  }
+  
+  .card, .carousel {
+    height: 300px; /* Define uma altura fixa */
+  }
+  
+  .carousel-inner img {
+    height: 100%; /* Faz com que a imagem ocupe a altura do carrossel */
+    object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorcer */
+  }
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
