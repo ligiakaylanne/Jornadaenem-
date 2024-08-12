@@ -53,6 +53,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
     box-sizing: border-box; /* Inclui o padding e border no cálculo da largura e altura */
+    background-color: #1B98E0;
 }
 
 /* Estilo para os links dentro dos cards */
