@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -8,15 +8,15 @@
     align-items: center;
     height: 100vh;
     justify-content: center;
-    background: linear-gradient(180deg,#5dc4ff,#2f78ff)
+}
 
-}
 #stopwatch {
-    background-color: rgb(51, 51, 51);
+    background-color: #1B98E0;
     padding: 2rem;
-    border-radius:8px;
+    border-radius: 8px;
 }
-#timer{
+
+#timer {
     width: 300px;
     height: 300px;
     display: flex;
@@ -30,12 +30,13 @@
     margin: 1.5rem;
     padding: 4rem;
 }
-#actions{
+
+#actions {
     display: flex;
     gap: 0.5rem;
 }
 
-#actions button{
+#actions button {
     display: flex;
     align-items: center;
     text-align: center;
@@ -47,16 +48,37 @@
     border-radius: 4px;
     font-size: 1rem;
 }
-#actions button:hover{
+
+#actions button:hover {
     background-color: #65c6ff;
 }
 
-#marks-list{
+#marks-list {
     display: flex;
     flex-direction: column;
     color: #ffff;
 }
+
 #marks-list p:first-child {
     margin-top: 1.5rem;
-
 }
+
+
+/* Estilo para o nome da marca na barra de navegação */
+.navbar-brand {
+    color: #007bff; /* Azul para o nome */
+}
+
+/* Estilo para os links de navegação */
+.navbar-nav .nav-link {
+    color: #000; /* Preto para os links */
+}
+
+/* Estilo para links ao passar o mouse na barra de navegação */
+.navbar-nav .nav-link:hover {
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 2px solid #007bff; /* Borda azul ao passar o mouse */
+    color: #007bff; /* Mudar a cor do texto ao passar o mouse */
+    background-color: #f8f9fa; /* Fundo claro ao passar o mouse */
+}
+
