@@ -84,3 +84,109 @@ h3 {
     margin-left: 300px;
 }
 /* Aplica uma margem à esquerda de 300px na seção de conteúdos, deslocando-a para a direita em relação ao contêiner pai. */
+
+
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 20px 0; /* Espaçamento interno (padding) vertical */
+}
+
+/* Container do rodapé para alinhamento e espaçamento */
+.footer-container {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Espaçamento interno lateral */
+    display: flex; /* Exibe os elementos filhos em linha */
+    justify-content: space-between; /* Espaça os itens igualmente ao longo do container */
+    align-items: flex-end; /* Alinha os itens no final do eixo transversal (vertical) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
+}
+
+/* Estilo para cada seção do rodapé */
+.footer-section {
+    flex: 1; /* Cada seção ocupa uma quantidade igual de espaço disponível */
+    margin: 10px; /* Margem ao redor de cada seção */
+}
+
+/* Estilo para os títulos de nível 2 em cada seção do rodapé */
+.footer-section h2 {
+    color: #002b9f; /* Cor do texto azul escuro */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+/* Estilo para os títulos de nível 3 em cada seção do rodapé */
+.footer-section h3 {
+    color: #002b9f; /* Cor do texto azul escuro */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Estilo para parágrafos, listas e itens de lista */
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 5px 0; /* Margem vertical */
+    color: #333; /* Cor do texto cinza escuro */
+}
+
+/* Estilo para listas dentro das seções do rodapé */
+.footer-section ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0; /* Remove padding interno */
+}
+
+/* Estilo para itens de lista dentro das seções do rodapé */
+.footer-section ul li {
+    margin: 5px 0; /* Margem vertical */
+}
+
+/* Estilo para links dentro dos itens de lista */
+.footer-section ul li a {
+    color: #333; /* Cor do texto cinza escuro */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Estilo para links ao passar o mouse */
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para a seção de redes sociais no rodapé */
+.footer-social {
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: flex-end; /* Alinha itens ao final do container (à direita) */
+    margin-top: 95px; /* Margem superior */
+    height: 100%; /* Altura total do container pai */
+}
+
+/* Estilo para listas de redes sociais */
+.footer-social ul {
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Exibe itens em linha */
+}
+
+/* Estilo para itens de lista de redes sociais */
+.footer-social ul li {
+    margin-left: 15px; /* Margem à esquerda */
+}
+
+/* Estilo para imagens de ícones de redes sociais */
+.footer-social ul li a img {
+    width: 30px; /* Largura da imagem */
+    height: 30px; /* Altura da imagem */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    /* Ajusta o layout do container do rodapé para telas pequenas */
+    .footer-container {
+        flex-direction: column; /* Exibe os itens em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+
+    /* Ajusta a seção de redes sociais para telas pequenas */
+    .footer-social {
+        justify-content: center; /* Centraliza horizontalmente */
+        margin-top: 20px; /* Margem superior reduzida */
+    }
+}

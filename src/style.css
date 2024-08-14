@@ -7,18 +7,26 @@ body{
   overflow-x: hidden;
 
 }
+.container-fluid {
+  padding: 0; /* Remove o padding do container */
+}
+
 .bg-custom {
-    background-color: #007bff; /* Azul */
-    padding: 20px;
-  }
-  
-  .card, .carousel {
-    height: 300px; /* Define uma altura fixa */
-  }
+  background-color: #007bff; /* Azul */
+  width: 100vw; /* Ocupa 100% da largura da viewport */
+  margin: 0; /* Remove margens adicionais */
+  position: relative; /* Garante que a largura seja a totalidade da tela */
+}
+
+.row {
+  margin: 0; /* Remove margens horizontais */
+}
+
   
   .carousel-inner img {
-    height: 100%; /* Faz com que a imagem ocupe a altura do carrossel */
     object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorcer */
+    width: 400px;
+    height: 400px;
   }
 
 .navbar-custom {
@@ -33,14 +41,36 @@ body{
     margin: 0 auto; /* Centraliza a imagem dentro do card */
     display: block; /* Garante que a centralização funcione corretamente */
     object-fit: contain; /* Garante que a imagem se ajuste dentro do container sem distorções */
+    border-radius: 50%; /* Torna a imagem redonda */
+    
 }
+
 .card {
   max-width: 250px; /* Define a largura máxima do card */
   margin: 0 auto; /* Centraliza o card na coluna */
   text-align: center;
+  background-color: #1C1B34;
+  color:white;
   
 
 }
+
+/* Estilos para o card personalizado */
+.custom-card {
+  max-width: 300px; /* Define a largura máxima do card */
+  width: 100%; /* Garante que o card ocupe toda a largura disponível até max-width */
+  max-height: 220px; /* Define uma altura mínima para o card */
+  margin: 0 auto; /* Centraliza o card */
+  text-align: center;
+  background-color: #1C1B34;
+  color: white;
+  border: 1px solid #fff; /* Adiciona uma borda branca */
+  border-radius: 10px; /* Arredonda os cantos do card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
+}
+
+
+
 
 
 
@@ -225,3 +255,4 @@ footer {
       margin-top: 20px;
   }
 }
+
