@@ -1,0 +1,86 @@
+/* Reset de margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* A regra universal (*) remove todas as margens e preenchimentos padrões para garantir consistência visual em todos os elementos da página. */
+
+.navbar-custom {
+    display: right;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Define um layout de exibição à direita para a barra de navegação personalizada, alinhando os itens ao centro verticalmente e distribuindo o espaço entre eles horizontalmente. */
+
+.navbar-brand {
+    color: #0511f2; /* Azul para o nome */
+}
+/* Estilo aplicado ao nome da marca na barra de navegação, alterando a cor do texto para azul (#0511f2). */
+
+.navbar-nav .nav-link {
+    color: #000; /* Preto para os links */
+    padding-right: 10px; 
+}
+/* Define o estilo dos links de navegação, configurando a cor do texto para preto e adicionando um preenchimento à direita de 10px para espaçamento entre os links. */
+
+.navbar-nav .nav-link:hover {
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 2px solid #0511f2; /* Borda azul ao passar o mouse */
+    color: #0511f2; /* Mudar a cor do texto ao passar o mouse */
+    background-color: #f8f9fa; /* Fundo claro ao passar o mouse */
+}
+/* Define o estilo dos links ao passar o mouse sobre eles (hover), adicionando bordas arredondadas, uma borda azul, alterando a cor do texto para azul e mudando a cor de fundo para um tom claro. */
+
+.box {
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    border: 2px solid #007bff; /* Borda azul */
+    border-radius: 50px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    width: 50%;
+}
+/* Estiliza uma caixa (box) com fundo claro (#f8f9fa), uma borda azul (#007bff), cantos arredondados com raio de 50px, espaçamento interno de 10px e centraliza o conteúdo textual. A largura da caixa é definida como 50% do contêiner pai. */
+
+h1 {
+    text-align: center;
+}
+/* Centraliza o título principal (h1) horizontalmente. */
+
+h3 {
+    text-align: center;
+    margin: 50px;
+}
+/* Centraliza os subtítulos (h3) e adiciona uma margem de 50px em volta para espaçamento. */
+
+.card-custom {
+    text-align: center;
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    margin: 10px; /* Espaçamento externo */
+    transition: transform 0.2s; /* Transição suave para transformações */
+}
+/* Estiliza cartões personalizados com texto centralizado, uma borda preta, cantos arredondados de 10px, 15px de espaçamento interno e 10px de margem externa. A transição define um efeito suave para transformações, como o zoom ao passar o mouse. */
+
+.card-custom:hover {
+    transform: scale(1.05);
+}
+/* Ao passar o mouse sobre o cartão, ele aumenta levemente de tamanho (5% maior) devido à escala aplicada pela transformação. */
+
+.card-custom img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+/* Define o tamanho das imagens dentro dos cartões como 50x50 pixels e adiciona 10px de margem inferior para espaçamento entre a imagem e o texto. */
+
+.card-custom h5 {
+    font-weight: bold;
+    color: blue;
+}
+/* Estiliza o título dos cartões (h5) com negrito e cor azul. */
+
+#conteudos {
+    margin-left: 300px;
+}
+/* Aplica uma margem à esquerda de 300px na seção de conteúdos, deslocando-a para a direita em relação ao contêiner pai. */
