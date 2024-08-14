@@ -22,3 +22,59 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .card-img-top {
+    width: 100px;  /* Define a largura fixa da imagem */
+    height: 100px; /* Define a altura fixa da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do card */
+    display: block; /* Garante que a centralização funcione corretamente */
+    object-fit: contain; /* Garante que a imagem se ajuste dentro do container sem distorções */
+}
+.card {
+  max-width: 250px; /* Define a largura máxima do card */
+  margin: 0 auto; /* Centraliza o card na coluna */
+  text-align: center;
+  
+
+}
+
+
+<!--rodape-->
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+}
+
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-right a:hover {
+  color: #ddd;
+}
