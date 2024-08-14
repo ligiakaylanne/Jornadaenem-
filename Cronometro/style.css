@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(180deg,#5dc4ff,#2f78ff)
+
+}
+#stopwatch {
+    background-color: rgb(51, 51, 51);
+    padding: 2rem;
+    border-radius:8px;
+}
+#timer{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51,51,51);
+    border: 3px solid #6b9fff;
+    border-radius: 100%;
+    color: white;
+    margin: 1.5rem;
+    padding: 4rem;
+}
+#actions{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#actions button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+#actions button:hover{
+    background-color: #65c6ff;
+}
+
+#marks-list{
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+}
+#marks-list p:first-child {
+    margin-top: 1.5rem;
+
+}
