@@ -1,0 +1,205 @@
+<html lang="pt">
+<head>
+    <!-- Define a codificação do documento e ajusta a visualização para dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Assuntos que mais caem</title>
+    
+    <!-- Link para o arquivo CSS do Bootstrap (framework de estilo) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Link para um arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Barra de navegação (navbar) usando Bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Nome da marca no canto esquerdo -->
+            <a class="navbar-brand" href="#">Jornada Enem</a>
+            
+            <!-- Botão de colapso para o menu em dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links de navegação dentro do menu -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Provas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Calcular Nota</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Crônometro</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Redação
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Professores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Título principal -->
+    <h1> Sumário dos Tópicos mais relevantes para o ENEM </h1>  
+    
+    <!-- Conteúdo principal da página -->
+    <div class="container">
+        <!-- Primeira linha de tópicos -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <!-- Cartão personalizado para o assunto Português e Literatura -->
+                <div class="card-custom">
+                    <h5>Português e Literatura</h5>
+                    <img src="https://static.thenounproject.com/png/1054645-200.png">
+                </div>
+            </div>
+            <!-- Repetição da estrutura de cartão para outros assuntos -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Inglês</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5388/5388604.png">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Espanhol</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/6724/6724632.png">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Artes</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3697/3697952.png">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Segunda linha de tópicos -->
+        <div class="row">
+            <!-- Repetição da estrutura de cartão para mais tópicos -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>História</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1985/1985745.png" alt="História">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Geografia</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1651/1651701.png" alt="Geografia">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Filosofia</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1651/1651713.png" alt="Filosofia">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Sociologia</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3533/3533224.png" alt="Sociologia">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Terceira linha de tópicos -->
+        <div class="row">
+            <!-- Repetição da estrutura de cartão para mais tópicos -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Matemática</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/647/647906.png" alt="Matemática">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Física</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/157/157141.png" alt="Física">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Química</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196079.png" alt="Química">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card-custom">
+                    <h5>Biologia</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1233/1233906.png" alt="Biologia">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seção de conteúdos detalhados de Linguagens e Códigos -->
+    <h3> Linguagens, códigos e suas tecnologias </h3>
+    <div id="conteudos">
+        <h5>　Português e Literatura</h5>
+        <ul>
+            <li><strong>Interpretação de textos(33,3%)</strong></li>
+            <li><strong>Tendências contemporâneas(28%)</strong></li>
+            <!-- Lista de tópicos importantes continua -->
+        </ul>
+        <h5>　Inglês</h5>
+        <ul>
+            <li><strong>Interpretação de Textos (51,3%)</strong></li>
+            <!-- Outros tópicos -->
+        </ul>
+        <h5>　Espanhol</h5>
+        <!-- Conteúdos de Espanhol -->
+        <!-- Repetição da estrutura de tópicos para outros assuntos como Artes -->
+    </div>
+    
+    <!-- Seção de Ciências Humanas -->
+    <h3> Ciências humanas e suas tecnologias </h3>
+    <div id="conteudos">
+        <h5>　História</h5>
+        <ul>
+            <li><strong>Idade Contemporânea (17,7%)</strong></li>
+            <!-- Outros tópicos -->
+        </ul>
+        <h5>　Geografia</h5>
+        <!-- Conteúdos de Geografia -->
+        <h5>　Filosofia</h5>
+        <!-- Conteúdos de Filosofia -->
+        <h5>　Sociologia</h5>
+        <!-- Conteúdos de Sociologia -->
+    </div>
+    
+    <!-- Seção de Ciências da Natureza -->
+    <h3> Ciências da natureza e suas tecnologias </h3>
+    <div id="conteudos">
+        <h5>　Química</h5>
+        <ul>
+            <li><strong>Físico-Química (27,0%)</strong></li>
+            <!-- Outros tópicos -->
+        </ul>
+        <h5>　Física</h5>
+        <!-- Conteúdos de Física -->
+        <h5>　Biologia</h5>
+        <!-- Conteúdos de Biologia -->
+    </div>
+    
+    <!-- Link para o arquivo JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OMoW9e8klfFa50keGNFRpOM4cWoifZ+dz6e6gpjcCBAXz1e8txC2B9H57c6yK8iD" crossorigin="anonymous"></script>
+</body>
+</html>
