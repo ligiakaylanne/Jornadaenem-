@@ -120,3 +120,99 @@ footer {
         margin-top: 20px;
     }
   }
+
+
+/* Estiliza o elemento <h2> */
+h2 {
+  font-size: 2rem; /* Define o tamanho da fonte */
+  margin-bottom: 20px; /* Adiciona uma margem abaixo do título */
+}
+
+/* Estiliza o elemento <h4> */
+h4 {
+  font-size: 1.5rem; /* Define o tamanho da fonte */
+  margin-top: 20px; /* Adiciona uma margem acima do título */
+  color: #34495e; /* Define a cor do texto */
+}
+
+/* Estiliza os parágrafos */
+p {
+  margin: 10px 0; /* Adiciona uma margem acima e abaixo dos parágrafos */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  line-height: 1.8; /* Define a altura da linha para facilitar a leitura */
+  color: #555; /* Define a cor do texto */
+}
+
+/* Estiliza elementos <strong> */
+strong {
+  color: #2c3e50; /* Define a cor do texto em negrito */
+}
+
+/* Estiliza o card da calculadora */
+.card1 {
+  max-width: 400px; /* Largura máxima do card */
+  height: 250px;
+  margin: 0 auto; /* Centraliza o card horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno */
+  background: #1B98E0; /* Define a cor de fundo do card como branco */
+  border-radius: 8px; /* Adiciona bordas arredondadas ao card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao card */
+  text-align: center; /* Centraliza o texto dentro do card */
+}
+
+/* Estiliza os grupos de formulário dentro do card */
+.form-group {
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+/* Estiliza os inputs do formulário */
+input[type="number"] {
+  width: 90px;
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* Estiliza o container dos grupos de formulário */
+.form-row {
+  display: flex; /* Organiza os grupos de formulário horizontalmente */
+  flex-wrap: wrap; /* Permite a quebra de linha quando necessário */
+}
+
+/* Estiliza a largura dos grupos dentro da form-row */
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Estiliza o botão */
+button {
+  background-color: #0511F2;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 130px; /* Botão ocupa toda a largura do card */
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #002b9f;
+}
+
+/* Estiliza o parágrafo que exibe o resultado */
+p#result {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+

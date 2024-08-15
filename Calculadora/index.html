@@ -44,8 +44,71 @@
   </nav>
   <br>
   <br><br>
-  <!--rodape-->
+
   
+    <h2 class="text-center">Calcule sua nota do Enem aqui:</h2>
+
+    <!-- Card para a calculadora -->
+    <div class="card1">
+      <form id="calculator-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="linguagens">Linguagens:</label>
+            <input type="number" id="linguagens" required>
+          </div>
+          <div class="form-group">
+            <label for="natureza">Ciências da Natureza:</label>
+            <input type="number" id="natureza" required>
+          </div>
+          <div class="form-group">
+            <label for="redacao">Redação:</label>
+            <input type="number" id="redacao" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="matematica">Matemática:</label>
+            <input type="number" id="matematica" required>
+          </div>
+          <div class="form-group">
+            <label for="humanas">Ciências Humanas:</label>
+            <input type="number" id="humanas" required>
+          </div>
+        </div>
+        <button type="button" onclick="calculateScore()">Calcular</button>
+      </form>
+      <h4>Resultado:</h4>
+      <br>
+    </div>
+  </div>
+
+    <br><br><br><br>
+    <div class="container">
+    <h4>Saiba como funciona a Calculadora:</h4>
+    <p>
+        A calculadora de notas do ENEM é uma ferramenta prática para estudantes que desejam ter uma ideia clara de sua pontuação final no Exame Nacional do Ensino Médio. Ela permite que você insira suas notas nas diferentes áreas do exame e obtenha uma estimativa do seu desempenho total.
+    </p>
+
+    <h4>Como Usar a Calculadora:</h4>
+    <p>
+        <strong>1. Insira Suas Notas:</strong> Basta digitar as notas que você obteve ou espera obter em cada uma das cinco áreas avaliadas no ENEM: <strong>Linguagens, Matemática, Ciências da Natureza, Ciências Humanas e Redação</strong>.
+    </p>
+    <p>
+        <strong>2. Veja o Resultado:</strong> Após inserir todas as notas, a calculadora faz a soma dessas pontuações para fornecer uma estimativa da sua nota total no ENEM.
+    </p>
+    <p>
+        <strong>3. Entenda Seu Desempenho:</strong> Com essa nota total, você pode ter uma ideia mais clara de como se saiu no exame e se aproximar do resultado necessário para ingressar no curso desejado.
+    </p>
+
+    <h4>Por que Usar a Calculadora?</h4>
+    <p>
+        A calculadora de notas do ENEM é uma maneira simples e rápida de verificar sua performance e planejar seus próximos passos, seja para entender suas chances em um processo seletivo ou para ajustar sua preparação para futuras provas.
+    </p>
+  </div>
+  
+  <br><br><br>
+
+  <!-- Rodapé -->
   <footer>
     <div class="footer-container">
         <div class="footer-section">
@@ -69,15 +132,14 @@
         </div>
         <div class="footer-social">
             <ul>
-                <li><a href="https://www.instagram.com/jornada__enem?igsh=YTJ6bXNiYTl0YTh6&utm_source=qr"><img src="../img/3dac2f11fa95efd036fa4e9ef2777be9.png" alt="Instagram"></a></li>
+                <li><a href="https://www.instagram.com/jornada__enem?igsh=YTJ6bXNi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"><img src="../img/3dac2f11fa95efd036fa4e9ef2777be9.png" alt="Instagram"></a></li>
                 <li><a href="#"><img src="../img/94d1d65be911125037040607554fdb31.png" alt="LinkedIn"></a></li>
             </ul>
         </div>
     </div>
   </footer>
 
-
-  
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
