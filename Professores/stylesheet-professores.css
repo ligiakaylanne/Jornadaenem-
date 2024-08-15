@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+section.sub-cabecalho > h1{
+    text-align: center;
+    margin: 3rem 0rem;
+}
+
+section.sub-cabecalho > p{
+    line-height: 30px;
+}
+
+section.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.container-professores{
+    display: flex;
+    flex-direction: column;
+}
+
+section.container-professores > h2{
+    text-align: center;
+    margin: 4rem 0rem;
+}
+
+section.container-professores > h3{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color:blue;
+}
+
+div.professores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+div.professores > p{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+}
+
+section.container > h2{
+    text-align: center;
+    margin: 4rem 0rem; 
+}
+
+section.grade-cursinhos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+div.cursinhos{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+}
