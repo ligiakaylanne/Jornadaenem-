@@ -1,258 +1,307 @@
-/* styles.css */
-*{
-    margin: 0;
-    padding: 0;
+/* Estilos globais */
+* {
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos */
 }
-body{
-  overflow-x: hidden;
 
+body {
+  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
 }
+
 .container-fluid {
-  padding: 0; /* Remove o padding do container */
+  padding: 0; /* Remove o padding do container-fluid */
 }
 
+/* Estilo para a seção com fundo personalizado */
 .bg-custom {
-  background-color: #1B98E0;
+  background-color: #8EC5FC; /* Define a cor de fundo azul claro */
   width: 100vw; /* Ocupa 100% da largura da viewport */
   margin: 0; /* Remove margens adicionais */
   position: relative; /* Garante que a largura seja a totalidade da tela */
+  height: 300px;
 }
 
+/* Remove margens das colunas */
 .row {
-  margin: 0; /* Remove margens horizontais */
+  margin: 0;
 }
 
-  
-  .carousel-inner img {
-    object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorcer */
-    width: 400px;
-    height: 400px;
-  }
+/* Estilo para o carrossel */
+.carousel {
+  height: 200px; /* Ajusta a altura do carrossel */
+}
 
+.carousel-inner {
+  height: 100%; /* Faz com que o contêiner interno ocupe toda a altura do carrossel */
+}
+
+.carousel-inner img {
+  height: 250px; /* Ajusta a altura da imagem */
+  width: auto; /* Ajusta a largura da imagem para manter a proporção */
+  object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+}
+
+/* Estilo para as colunas com layout flexível */
+.col-md-6 {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Opcional: centraliza horizontalmente */
+}
+
+/* Estilo para a navbar personalizada */
 .navbar-custom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .card-img-top {
-    width: 100px;  /* Define a largura fixa da imagem */
-    height: 100px; /* Define a altura fixa da imagem */
-    margin: 0 auto; /* Centraliza a imagem dentro do card */
-    display: block; /* Garante que a centralização funcione corretamente */
-    object-fit: contain; /* Garante que a imagem se ajuste dentro do container sem distorções */
-    border-radius: 50%; /* Torna a imagem redonda */
-    
+  display: flex;
+  justify-content: space-between; /* Espaça os itens da navbar */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
+/* Estilo para a imagem do card */
+.card-img-top {
+  width: 100px; /* Define a largura fixa da imagem */
+  height: 100px; /* Define a altura fixa da imagem */
+  margin: 0 auto; /* Centraliza a imagem dentro do card */
+  display: block; /* Garante que a centralização funcione corretamente */
+  object-fit: contain; /* Garante que a imagem se ajuste dentro do container sem distorções */
+  border-radius: 50%; /* Torna a imagem redonda */
+}
+
+/* Estilo básico para o card */
 .card {
   max-width: 250px; /* Define a largura máxima do card */
   margin: 0 auto; /* Centraliza o card na coluna */
   text-align: center;
-  background-color: #1C1B34;
-  color:white;
-  
-
+  background-color: #1C1B34; /* Cor de fundo do card */
+  color: white; /* Cor do texto */
 }
 
-/* Estilos para o card personalizado */
+/* Estilo para um card personalizado */
 .custom-card {
   max-width: 300px; /* Define a largura máxima do card */
   width: 100%; /* Garante que o card ocupe toda a largura disponível até max-width */
-  max-height: 220px; /* Define uma altura mínima para o card */
+  max-height: 220px; /* Define uma altura máxima para o card */
   margin: 0 auto; /* Centraliza o card */
   text-align: center;
-  background-color: #1C1B34;
-  color: white;
-  border: 1px solid #fff; /* Adiciona uma borda branca */
+  background-color: #1C1B34; /* Cor de fundo do card */
+  color: white; /* Cor do texto */
+  border: 1px solid #fff; /* Borda branca */
   border-radius: 10px; /* Arredonda os cantos do card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
 }
 
-
-
-
-
-
-
-
-
-/* ------------- */
-/* Duvidas Frequetens */
-
-
+/* Estilos para a seção de perguntas frequentes */
 .faq-container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px;
+  width: 90%; /* Define a largura da seção */
+  margin: 0 auto; /* Centraliza a seção */
+  padding: 20px; /* Adiciona padding interno */
 }
 
 .title-h1-main {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+  text-align: center; /* Alinha o título ao centro */
+  margin-bottom: 20px; /* Adiciona margem inferior */
+  color: #333; /* Cor do texto */
 }
 
 .faq-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define o layout do grid */
+  gap: 20px; /* Espaçamento entre os itens do grid */
 }
 
+/* Estilo para cada item de FAQ */
 .faq-item {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Cor de fundo branca */
+  border-radius: 8px; /* Arredonda os cantos */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
   display: flex;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
+/* Estilo para a pergunta */
 .faq-question {
-  background-color: #002b9f;
-  color: white;
-  padding: 15px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  background-color: #002b9f; /* Cor de fundo azul escuro */
+  color: white; /* Cor do texto */
+  padding: 15px; /* Adiciona padding interno */
+  border: none; /* Remove a borda */
+  text-align: left; /* Alinha o texto à esquerda */
+  outline: none; /* Remove o contorno */
+  font-size: 16px; /* Define o tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para pointer */
+  display: flex; /* Usa flexbox */
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  width: 100%; /* Ocupa toda a largura do contêiner */
   margin: 0;
 }
 
+/* Estilo para o ícone da pergunta */
 .faq-question i {
-  margin-left: 10px;
-  transition: transform 0.3s ease;
+  margin-left: 10px; /* Adiciona margem à esquerda do ícone */
+  transition: transform 0.3s ease; /* Adiciona transição suave */
 }
 
+/* Estilo para a resposta */
 .faq-answer {
-  background-color: white;
-  display: none;
-  padding: 15px;
-  font-size: 16px;
-  color: #333;
-  flex-grow: 1;
+  background-color: white; /* Cor de fundo branca */
+  display: none; /* Oculta a resposta */
+  padding: 15px; /* Adiciona padding interno */
+  font-size: 16px; /* Define o tamanho da fonte */
+  color: #333; /* Cor do texto */
+  flex-grow: 1; /* Permite que a resposta ocupe o espaço disponível */
   margin: 0;
+  
 }
 
+/* Estilo para mostrar a resposta */
 .faq-answer.show {
-  display: block;
+  display: block; /* Exibe a resposta */
 }
 
+/* Estilo para o ícone da pergunta quando ativa */
 .faq-question.active i {
-  transform: rotate(180deg);
+  transform: rotate(180deg); /* Rotaciona o ícone */
 }
 
-
-
+/* Estilos responsivos */
 @media (max-width: 768px) {
   .faq-item {
-      flex: 1 1 100%;
+      flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura disponível */
   }
 }
+
+/* Estilo para um item destacado */
 .highlight {
-  border: 2px solid #002b9f;
-  background-color: #f0f8ff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #002b9f; /* Borda azul escura */
+  background-color: #f0f8ff; /* Cor de fundo azul claro */
+  border-radius: 8px; /* Arredonda os cantos */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
   display: flex;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  flex-direction: column;
+  flex-direction: column; /* Organiza os itens em coluna */
 }
 
-/* ----------------------- */
-/* Footer */
+/* Estilo para o rodapé */
 footer {
-  background-color: #ffffff;
-  padding: 20px 0;
+  background-color: #ffffff; /* Cor de fundo branca */
+  padding: 20px 0; /* Adiciona padding superior e inferior */
 }
 
+/* Container do rodapé */
 .footer-container {
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  margin: 0 auto; /* Centraliza o container */
+  padding: 0 20px; /* Adiciona padding lateral */
+  display: flex; /* Usa flexbox */
+  justify-content: space-between; /* Espaça os itens */
+  align-items: flex-end; /* Alinha os itens na parte inferior */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
 }
 
+/* Seção do rodapé */
 .footer-section {
-  flex: 1;
-  margin: 10px;
+  flex: 1; /* Faz com que a seção ocupe o espaço disponível */
+  margin: 10px; /* Adiciona margem */
 }
 
+/* Estilo para os títulos no rodapé */
 .footer-section h2 {
-  color: #002b9f;
-  font-size: 24px;
+  color: #002b9f; /* Cor azul escura */
+  font-size: 24px; /* Tamanho da fonte */
 }
 
 .footer-section h3 {
-  color: #002b9f;
-  font-size: 18px;
+  color: #002b9f; /* Cor azul escura */
+  font-size: 18px; /* Tamanho da fonte */
 }
 
+/* Estilo para os parágrafos e listas no rodapé */
 .footer-section p, .footer-section ul, .footer-section li {
-  margin: 5px 0;
-  color: #333;
+  margin: 5px 0; /* Adiciona margem */
+  color: #333; /* Cor do texto */
 }
 
 .footer-section ul {
-  list-style: none;
-  padding: 0;
+  list-style: none; /* Remove marcadores das listas */
+  padding: 0; /* Remove padding */
 }
 
 .footer-section ul li {
-  margin: 5px 0;
+  margin: 5px 0; /* Adiciona margem */
 }
 
 .footer-section ul li a {
-  color: #333;
-  text-decoration: none;
+  color: #333; /* Cor do texto do link */
+  text-decoration: none; /* Remove o sublinhado do link */
 }
 
 .footer-section ul li a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+/* Estilo para os ícones sociais no rodapé */
 .footer-social {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 95px;
+  display: flex; /* Usa flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: flex-end; /* Alinha os itens ao final */
+  margin-top: 95px; /* Adiciona margem superior */
   height: 100%;
 }
 
 .footer-social ul {
-  list-style: none;
-  display: flex;
+  list-style: none; /* Remove marcadores das listas */
+  display: flex; /* Usa flexbox */
 }
 
 .footer-social ul li {
-  margin-left: 15px;
+  margin-left: 15px; /* Adiciona margem à esquerda */
 }
 
 .footer-social ul li a img {
-  width: 30px;
-  height: 30px;
+  width: 30px; /* Define a largura da imagem */
+  height: 30px; /* Define a altura da imagem */
 }
 
+/* Estilos responsivos para o rodapé */
 @media (max-width: 768px) {
   .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      flex-direction: column; /* Alinha os itens em coluna */
+      align-items: center; /* Centraliza os itens */
+      text-align: center; /* Alinha o texto ao centro */
   }
 
   .footer-social {
-      justify-content: center;
-      margin-top: 20px;
+      justify-content: center; /* Centraliza os itens sociais */
+      margin-top: 20px; /* Adiciona margem superior */
   }
 }
 
+/* Atualiza o fundo e o estilo do botão no card personalizado */
+.custom-card {
+  max-width: 300px; /* Define a largura máxima do card */
+  width: 100%; /* Garante que o card ocupe toda a largura disponível até max-width */
+  max-height: 220px; /* Define uma altura máxima para o card */
+  margin: 0 auto; /* Centraliza o card */
+  text-align: center;
+  background-color: #ffffff; /* Fundo branco do card */
+  color: #000; /* Cor do texto */
+  border: 1px solid #1C1B34; /* Borda escura */
+  border-radius: 10px; /* Arredonda os cantos do card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
+}
+
+/* Estilo para o botão de link no card */
+.custom-card .card-link {
+  background-color: #002b9f; /* Cor de fundo azul para o botão */
+  color: #ffffff; /* Cor do texto do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  text-decoration: none; /* Remove o sublinhado do texto */
+  display: inline-block; /* Faz o botão se comportar como um bloco inline */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.custom-card .card-link:hover {
+  background-color: #001f5d; /* Cor de fundo azul mais escura ao passar o mouse */
+}
