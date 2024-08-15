@@ -55,6 +55,24 @@ body {
   align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
+/* Estilo básico para o card */
+.card {
+  max-width: 250px; /* Define a largura máxima do card */
+  margin: 0 auto; /* Centraliza o card na coluna */
+  text-align: center;
+  background-color: #FFFFFF; /* Fundo branco do card */
+  color: #424242; /* Texto cinza escuro */
+  border: 1px solid #E3F2FD; /* Borda azul claro */
+  border-radius: 12px; /* Arredonda os cantos do card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombras */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Intensifica a sombra ao passar o mouse */
+}
+
 /* Estilo para a imagem do card */
 .card-img-top {
   width: 100px; /* Define a largura fixa da imagem */
@@ -63,15 +81,6 @@ body {
   display: block; /* Garante que a centralização funcione corretamente */
   object-fit: contain; /* Garante que a imagem se ajuste dentro do container sem distorções */
   border-radius: 50%; /* Torna a imagem redonda */
-}
-
-/* Estilo básico para o card */
-.card {
-  max-width: 250px; /* Define a largura máxima do card */
-  margin: 0 auto; /* Centraliza o card na coluna */
-  text-align: center;
-  background-color: #FFFFFF; /* Fundo branco do card */
-  color: #424242; /* Texto cinza escuro */
 }
 
 /* Estilo para um card personalizado */
@@ -84,8 +93,29 @@ body {
   background-color: #FFFFFF; /* Fundo branco do card */
   color: #424242; /* Texto cinza escuro */
   border: 1px solid #B3E5FC; /* Borda azul claro */
-  border-radius: 10px; /* Arredonda os cantos do card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
+  border-radius: 12px; /* Arredonda os cantos do card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombras */
+}
+
+.custom-card:hover {
+  transform: translateY(-8px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Intensifica a sombra ao passar o mouse */
+}
+
+/* Atualiza o fundo e o estilo do botão no card personalizado */
+.custom-card .card-link {
+  background-color: #0277BD; /* Azul mais escuro */
+  color: #FFFFFF; /* Texto branco */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  text-decoration: none; /* Remove o sublinhado do texto */
+  display: inline-block; /* Faz o botão se comportar como um bloco inline */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.custom-card .card-link:hover {
+  background-color: #01579B; /* Azul muito escuro */
 }
 
 /* Estilos para a seção de perguntas frequentes */
@@ -165,7 +195,18 @@ body {
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .faq-item {
-      flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura disponível */
+    flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura disponível */
+  }
+
+  .footer-container {
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .footer-social {
+    justify-content: center; /* Centraliza os itens sociais */
+    margin-top: 20px; /* Adiciona margem superior */
   }
 }
 
@@ -260,33 +301,4 @@ footer {
 .footer-social ul li a img {
   width: 30px; /* Define a largura da imagem */
   height: 30px; /* Define a altura da imagem */
-}
-
-/* Estilos responsivos para o rodapé */
-@media (max-width: 768px) {
-  .footer-container {
-      flex-direction: column; /* Alinha os itens em coluna */
-      align-items: center; /* Centraliza os itens */
-      text-align: center; /* Alinha o texto ao centro */
-  }
-
-  .footer-social {
-      justify-content: center; /* Centraliza os itens sociais */
-      margin-top: 20px; /* Adiciona margem superior */
-  }
-}
-
-/* Atualiza o fundo e o estilo do botão no card personalizado */
-.custom-card .card-link {
-  background-color: #0277BD; /* Azul mais escuro */
-  color: #FFFFFF; /* Texto branco */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Arredonda os cantos do botão */
-  text-decoration: none; /* Remove o sublinhado do texto */
-  display: inline-block; /* Faz o botão se comportar como um bloco inline */
-  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-}
-
-.custom-card .card-link:hover {
-  background-color: #01579B; /* Azul muito escuro */
 }
