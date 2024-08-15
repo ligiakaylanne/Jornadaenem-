@@ -12,7 +12,7 @@ body{
 }
 
 .bg-custom {
-  background-color: #007bff; /* Azul */
+  background-color: #1B98E0;
   width: 100vw; /* Ocupa 100% da largura da viewport */
   margin: 0; /* Remove margens adicionais */
   position: relative; /* Garante que a largura seja a totalidade da tela */
