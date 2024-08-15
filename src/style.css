@@ -14,7 +14,7 @@ body {
 
 /* Estilo para a seção com fundo personalizado */
 .bg-custom {
-  background-color: #8EC5FC; /* Define a cor de fundo azul claro */
+  background-color: #B3E5FC; /* Azul claro suave */
   width: 100vw; /* Ocupa 100% da largura da viewport */
   margin: 0; /* Remove margens adicionais */
   position: relative; /* Garante que a largura seja a totalidade da tela */
@@ -70,8 +70,8 @@ body {
   max-width: 250px; /* Define a largura máxima do card */
   margin: 0 auto; /* Centraliza o card na coluna */
   text-align: center;
-  background-color: #1C1B34; /* Cor de fundo do card */
-  color: white; /* Cor do texto */
+  background-color: #FFFFFF; /* Fundo branco do card */
+  color: #424242; /* Texto cinza escuro */
 }
 
 /* Estilo para um card personalizado */
@@ -81,9 +81,9 @@ body {
   max-height: 220px; /* Define uma altura máxima para o card */
   margin: 0 auto; /* Centraliza o card */
   text-align: center;
-  background-color: #1C1B34; /* Cor de fundo do card */
-  color: white; /* Cor do texto */
-  border: 1px solid #fff; /* Borda branca */
+  background-color: #FFFFFF; /* Fundo branco do card */
+  color: #424242; /* Texto cinza escuro */
+  border: 1px solid #B3E5FC; /* Borda azul claro */
   border-radius: 10px; /* Arredonda os cantos do card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
 }
@@ -120,7 +120,7 @@ body {
 
 /* Estilo para a pergunta */
 .faq-question {
-  background-color: #002b9f; /* Cor de fundo azul escuro */
+  background-color: #0288D1; /* Azul intenso */
   color: white; /* Cor do texto */
   padding: 15px; /* Adiciona padding interno */
   border: none; /* Remove a borda */
@@ -150,7 +150,6 @@ body {
   color: #333; /* Cor do texto */
   flex-grow: 1; /* Permite que a resposta ocupe o espaço disponível */
   margin: 0;
-  
 }
 
 /* Estilo para mostrar a resposta */
@@ -172,8 +171,8 @@ body {
 
 /* Estilo para um item destacado */
 .highlight {
-  border: 2px solid #002b9f; /* Borda azul escura */
-  background-color: #f0f8ff; /* Cor de fundo azul claro */
+  border: 2px solid #0288D1; /* Borda azul intenso */
+  background-color: #E3F2FD; /* Cor de fundo azul claro */
   border-radius: 8px; /* Arredonda os cantos */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
   display: flex;
@@ -207,12 +206,12 @@ footer {
 
 /* Estilo para os títulos no rodapé */
 .footer-section h2 {
-  color: #002b9f; /* Cor azul escura */
+  color: #0288D1; /* Azul intenso */
   font-size: 24px; /* Tamanho da fonte */
 }
 
 .footer-section h3 {
-  color: #002b9f; /* Cor azul escura */
+  color: #0288D1; /* Azul intenso */
   font-size: 18px; /* Tamanho da fonte */
 }
 
@@ -278,23 +277,9 @@ footer {
 }
 
 /* Atualiza o fundo e o estilo do botão no card personalizado */
-.custom-card {
-  max-width: 300px; /* Define a largura máxima do card */
-  width: 100%; /* Garante que o card ocupe toda a largura disponível até max-width */
-  max-height: 220px; /* Define uma altura máxima para o card */
-  margin: 0 auto; /* Centraliza o card */
-  text-align: center;
-  background-color: #ffffff; /* Fundo branco do card */
-  color: #000; /* Cor do texto */
-  border: 1px solid #1C1B34; /* Borda escura */
-  border-radius: 10px; /* Arredonda os cantos do card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
-}
-
-/* Estilo para o botão de link no card */
 .custom-card .card-link {
-  background-color: #002b9f; /* Cor de fundo azul para o botão */
-  color: #ffffff; /* Cor do texto do botão */
+  background-color: #0277BD; /* Azul mais escuro */
+  color: #FFFFFF; /* Texto branco */
   padding: 10px 20px; /* Espaçamento interno do botão */
   border-radius: 5px; /* Arredonda os cantos do botão */
   text-decoration: none; /* Remove o sublinhado do texto */
@@ -303,5 +288,5 @@ footer {
 }
 
 .custom-card .card-link:hover {
-  background-color: #001f5d; /* Cor de fundo azul mais escura ao passar o mouse */
+  background-color: #01579B; /* Azul muito escuro */
 }
