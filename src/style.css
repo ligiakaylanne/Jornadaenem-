@@ -1,23 +1,20 @@
 /* Estilos globais */
 * {
-  margin: 0; /* Remove a margem padrão de todos os elementos */
-  padding: 0; /* Remove o padding padrão de todos os elementos */
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+  overflow-x: hidden;
 }
 
-.container-fluid {
-  padding: 0; /* Remove o padding do container-fluid */
-}
 
 /* Estilo para a seção com fundo personalizado */
 .bg-custom {
-  background-color: #B3E5FC; /* Azul claro suave */
-  width: 100vw; /* Ocupa 100% da largura da viewport */
-  margin: 0; /* Remove margens adicionais */
-  position: relative; /* Garante que a largura seja a totalidade da tela */
+  background-color: #E3F2FD; /* Azul claro suave */
+  width: 100vw;
+  margin: 0;
+  position: relative;
   height: 300px;
 }
 
@@ -28,85 +25,83 @@ body {
 
 /* Estilo para o carrossel */
 .carousel {
-  height: 200px; /* Ajusta a altura do carrossel */
+  height: 200px;
 }
 
 .carousel-inner {
-  height: 100%; /* Faz com que o contêiner interno ocupe toda a altura do carrossel */
+  height: 100%;
 }
 
 .carousel-inner img {
-  height: 250px; /* Ajusta a altura da imagem */
-  width: auto; /* Ajusta a largura da imagem para manter a proporção */
-  object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+  height: 250px;
+  width: auto;
+  object-fit: cover;
 }
 
 /* Estilo para as colunas com layout flexível */
 .col-md-6 {
   display: flex;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Opcional: centraliza horizontalmente */
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 /* Estilo básico para o card */
 .card {
-  max-width: 250px; /* Define a largura máxima do card */
-  margin: 0 auto; /* Centraliza o card na coluna */
+  max-width: 250px;
+  margin: 0 auto;
   text-align: center;
-  background-color: #FFFFFF; /* Fundo branco do card */
-  color: #424242; /* Texto cinza escuro */
-  border: 1px solid #E3F2FD; /* Borda azul claro */
-  border-radius: 12px; /* Arredonda os cantos do card */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombras */
+  background-color: #FFECB3; /* Laranja claro suave */
+  color: #424242;
+  border: 1px solid #B0BEC5; /* Cinza claro */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px); /* Eleva o card ao passar o mouse */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Intensifica a sombra ao passar o mouse */
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para a imagem do card */
 .card-img-top {
-  width: 100px; /* Define a largura fixa da imagem */
-  height: 100px; /* Define a altura fixa da imagem */
-  margin: 0 auto; /* Centraliza a imagem dentro do card */
-  display: block; /* Garante que a centralização funcione corretamente */
-  object-fit: contain; /* Garante que a imagem se ajuste dentro do container sem distorções */
-  border-radius: 50%; /* Torna a imagem redonda */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 /* Estilo para um card personalizado */
 .custom-card {
-  max-width: 300px; /* Define a largura máxima do card */
-  width: 100%; /* Garante que o card ocupe toda a largura disponível até max-width */
-  max-height: 220px; /* Define uma altura máxima para o card */
-  margin: 0 auto; /* Centraliza o card */
+  max-width: 300px;
+  width: 100%;
+  max-height: 220px;
+  margin: 0 auto;
   text-align: center;
-  background-color: #FFFFFF; /* Fundo branco do card */
-  color: #424242; /* Texto cinza escuro */
-  border: 1px solid #B3E5FC; /* Borda azul claro */
-  border-radius: 12px; /* Arredonda os cantos do card */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações e sombras */
+  background-color: #FFFFFF;
+  color: #424242;
+  border: 1px solid #B0BEC5; /* Cinza claro */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .custom-card:hover {
-  transform: translateY(-8px); /* Eleva o card ao passar o mouse */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Intensifica a sombra ao passar o mouse */
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Atualiza o fundo e o estilo do botão no card personalizado */
 .custom-card .card-link {
-  background-color: #0277BD; /* Azul mais escuro */
-  color: #FFFFFF; /* Texto branco */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Arredonda os cantos do botão */
-  text-decoration: none; /* Remove o sublinhado do texto */
-  display: inline-block; /* Faz o botão se comportar como um bloco inline */
-  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  background-color: #0288D1; /* Azul mais escuro */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .custom-card .card-link:hover {
@@ -115,21 +110,21 @@ body {
 
 /* Estilos para a seção de perguntas frequentes */
 .faq-container {
-  width: 90%; /* Define a largura da seção */
-  margin: 0 auto; /* Centraliza a seção */
-  padding: 20px; /* Adiciona padding interno */
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .title-h1-main {
-  text-align: center; /* Alinha o título ao centro */
-  margin-bottom: 20px; /* Adiciona margem inferior */
-  color: #333; /* Cor do texto */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .faq-cards {
-  display: grid; /* Usa grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define o layout do grid */
-  gap: 20px; /* Espaçamento entre os itens do grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 /* Estilo para cada item de FAQ */
@@ -146,24 +141,24 @@ body {
 /* Estilo para a pergunta */
 .faq-question {
   background-color: #0288D1; /* Azul intenso */
-  color: white; /* Cor do texto */
-  padding: 15px; /* Adiciona padding interno */
-  border: none; /* Remove a borda */
-  text-align: left; /* Alinha o texto à esquerda */
-  outline: none; /* Remove o contorno */
-  font-size: 16px; /* Define o tamanho da fonte */
-  cursor: pointer; /* Muda o cursor para pointer */
-  display: flex; /* Usa flexbox */
-  justify-content: space-between; /* Espaça os itens */
-  align-items: center; /* Alinha os itens verticalmente */
-  width: 100%; /* Ocupa toda a largura do contêiner */
+  color: white;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin: 0;
 }
 
 /* Estilo para o ícone da pergunta */
 .faq-question i {
-  margin-left: 10px; /* Adiciona margem à esquerda do ícone */
-  transition: transform 0.3s ease; /* Adiciona transição suave */
+  margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
 /* Estilo para a resposta */
@@ -207,14 +202,13 @@ body {
 
 /* Estilo para um item destacado */
 .highlight {
-  border: 2px solid #0288D1; /* Borda azul intenso */
-  background-color: #E3F2FD; /* Cor de fundo azul claro */
-  border-radius: 8px; /* Arredonda os cantos */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  border: 2px solid #0288D1; /* Azul mais escuro */
+  background-color: #E3F2FD; /* Azul claro suave */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  flex-direction: column; /* Organiza os itens em coluna */
+  flex-direction: column;
 }
-
