@@ -48,12 +48,7 @@ body {
   justify-content: center; /* Opcional: centraliza horizontalmente */
 }
 
-/* Estilo para a navbar personalizada */
-.navbar-custom {
-  display: flex;
-  justify-content: space-between; /* Espaça os itens da navbar */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-}
+
 
 /* Estilo básico para o card */
 .card {
@@ -223,82 +218,3 @@ body {
   flex-direction: column; /* Organiza os itens em coluna */
 }
 
-/* Estilo para o rodapé */
-footer {
-  background-color: #ffffff; /* Cor de fundo branca */
-  padding: 20px 0; /* Adiciona padding superior e inferior */
-}
-
-/* Container do rodapé */
-.footer-container {
-  margin: 0 auto; /* Centraliza o container */
-  padding: 0 20px; /* Adiciona padding lateral */
-  display: flex; /* Usa flexbox */
-  justify-content: space-between; /* Espaça os itens */
-  align-items: flex-end; /* Alinha os itens na parte inferior */
-  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
-}
-
-/* Seção do rodapé */
-.footer-section {
-  flex: 1; /* Faz com que a seção ocupe o espaço disponível */
-  margin: 10px; /* Adiciona margem */
-}
-
-/* Estilo para os títulos no rodapé */
-.footer-section h2 {
-  color: #0288D1; /* Azul intenso */
-  font-size: 24px; /* Tamanho da fonte */
-}
-
-.footer-section h3 {
-  color: #0288D1; /* Azul intenso */
-  font-size: 18px; /* Tamanho da fonte */
-}
-
-/* Estilo para os parágrafos e listas no rodapé */
-.footer-section p, .footer-section ul, .footer-section li {
-  margin: 5px 0; /* Adiciona margem */
-  color: #333; /* Cor do texto */
-}
-
-.footer-section ul {
-  list-style: none; /* Remove marcadores das listas */
-  padding: 0; /* Remove padding */
-}
-
-.footer-section ul li {
-  margin: 5px 0; /* Adiciona margem */
-}
-
-.footer-section ul li a {
-  color: #333; /* Cor do texto do link */
-  text-decoration: none; /* Remove o sublinhado do link */
-}
-
-.footer-section ul li a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-/* Estilo para os ícones sociais no rodapé */
-.footer-social {
-  display: flex; /* Usa flexbox */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  justify-content: flex-end; /* Alinha os itens ao final */
-  margin-top: 95px; /* Adiciona margem superior */
-  height: 100%;
-}
-
-.footer-social ul {
-  list-style: none; /* Remove marcadores das listas */
-  display: flex; /* Usa flexbox */
-}
-
-.footer-social ul li {
-  margin-left: 15px; /* Adiciona margem à esquerda */
-}
-
-.footer-social ul li a img {
-  width: 30px; /* Define a largura da imagem */
-  height: 30px; /* Define a altura da imagem */
-}
