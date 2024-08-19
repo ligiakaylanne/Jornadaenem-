@@ -1,0 +1,100 @@
+section.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.quem-somos > h2{
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+section.quem-somos > p{
+    margin-bottom: 1rem;
+    line-height: 27px;
+}
+
+section.nossa-missao{
+    margin: 3rem 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+
+section.nossa-missao > div > h2{
+    margin-bottom: 2rem;
+}
+
+section.nossa-missao > div > p{
+    line-height: 27px;
+}
+
+img.foto-nossa-missao{
+    margin-top: 2rem;
+    border-radius: 50%;
+    width: 25rem;
+}
+
+section.nossa-historia > h2{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+section.outra-secao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+section.outra-secao > div{
+    margin-top: 2rem;
+} 
+
+section.outra-secao > div > h2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section.outra-secao > div > p{
+    line-height: 27px;
+}
+
+section.nosso-time > h2{
+    text-align: center;
+    margin: 3rem 0rem;
+}
+
+section.linha-nosso-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 0rem;
+    gap: 3rem;
+    background-color: aqua;
+}
+
+div.imagens{
+    background-color: beige;
+    position: relative;
+    border-radius: 15px;
+}
+
+figure.imagens-membros{
+    height: 14rem;
+    padding: 2rem;
+}
+
+figure.imagens-membros > img{
+    border-radius: 100%;
+    width: 7rem;
+}
+
+figure.imagens-membros > p{
+    text-align: center;
+    margin: 12px;
+    font-weight: 600;
+}
