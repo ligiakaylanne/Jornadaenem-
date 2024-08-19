@@ -11,7 +11,7 @@ body {
 
 /* Estilo para a seção com fundo personalizado */
 .bg-custom {
-  background-color: #E3F2FD; /* Azul claro suave */
+  background-color: #3A728E; /* Azul claro suave */
   width: 100vw;
   margin: 0;
   position: relative;
@@ -50,7 +50,7 @@ body {
   max-width: 250px;
   margin: 0 auto;
   text-align: center;
-  background-color: #FFECB3; /* Laranja claro suave */
+  background-color: #5C93AA; /* Laranja claro suave */
   color: #424242;
   border: 1px solid #B0BEC5; /* Cinza claro */
   border-radius: 12px;
@@ -95,7 +95,7 @@ body {
 
 /* Atualiza o fundo e o estilo do botão no card personalizado */
 .custom-card .card-link {
-  background-color: #0288D1; /* Azul mais escuro */
+  background-color: #0C3756; /* Azul mais escuro */
   color: #FFFFFF;
   padding: 10px 20px;
   border-radius: 5px;
@@ -140,7 +140,7 @@ body {
 
 /* Estilo para a pergunta */
 .faq-question {
-  background-color: #0288D1; /* Azul intenso */
+  background-color: #1F5372; /* Azul intenso */
   color: white;
   padding: 15px;
   border: none;
