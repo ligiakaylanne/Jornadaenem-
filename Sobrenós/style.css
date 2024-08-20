@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden; /* Esconde a rolagem horizontal */
+
+}
 section.container{
     display: flex;
     flex-wrap: wrap;
@@ -66,21 +74,31 @@ section.outra-secao > div > p{
 section.nosso-time > h2{
     text-align: center;
     margin: 3rem 0rem;
+    width: 100%;
 }
 
-section.linha-nosso-time{
+section.linha-nosso-time {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 3rem 0rem;
     gap: 3rem;
-    background-color: aqua;
+    background-color: #5C93AA;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box; /* Inclui padding e bordas na largura */
+
 }
+
 
 div.imagens{
     background-color: beige;
     position: relative;
     border-radius: 15px;
+    overflow: hidden;
+    
+
 }
 
 figure.imagens-membros{
@@ -88,10 +106,12 @@ figure.imagens-membros{
     padding: 2rem;
 }
 
-figure.imagens-membros > img{
+figure.imagens-membros > img {
     border-radius: 100%;
     width: 7rem;
+    height: 7rem; /* Define uma altura fixa igual à largura */
 }
+
 
 figure.imagens-membros > p{
     text-align: center;
