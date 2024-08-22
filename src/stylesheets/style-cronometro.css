@@ -13,11 +13,6 @@ body{
     justify-content: center;
 }
 
-#stopwatch {
-    background-color: #1B98E0;
-    padding: 2rem;
-    border-radius: 8px;
-}
 
 #timer {
     width: 300px;
@@ -50,10 +45,13 @@ body{
     cursor: pointer;
     border-radius: 4px;
     font-size: 1rem;
-}
+    background-color: #003366;
+    color: #fff;
+  }
 
 #actions button:hover {
-    background-color: #65c6ff;
+  background-color: #5C93AA;
+  color: #fff;
 }
 
 #marks-list {

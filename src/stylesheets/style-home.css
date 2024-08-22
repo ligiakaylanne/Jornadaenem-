@@ -26,6 +26,8 @@ body {
 /* Estilo para o carrossel */
 .carousel {
   height: 200px;
+  margin-top: 25px; /* Ajuste o valor conforme necessário */
+
 }
 
 .carousel-inner {
@@ -51,7 +53,7 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: #5C93AA; /* Laranja claro suave */
-  color: #424242;
+  color: #ffffff;
   border: 1px solid #B0BEC5; /* Cinza claro */
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -97,8 +99,8 @@ body {
 .custom-card .card-link {
   background-color: #0C3756; /* Azul mais escuro */
   color: #FFFFFF;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px 10px;
+  border-radius: 20px;
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -211,8 +213,14 @@ body {
   padding: 0;
   overflow: hidden;
   flex-direction: column;
+  
 }
 .keyboard{
   width: 18px;
   height: 10px;
+}
+.btn.btn-primary {
+  background-color: #ffffff;
+  color: #0C3756;
+  border-radius: 20px;
 }

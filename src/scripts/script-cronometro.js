@@ -1,6 +1,7 @@
 let timerInterval;
 let elapsedTime = 0;
 let isRunning = false;
+let isPaused = false;
 
 const timerDisplay = document.getElementById('timer');
 const powerButton = document.getElementById('power');
@@ -34,28 +35,43 @@ function stopTimer() {
     clearInterval(timerInterval);
 }
 
-powerButton.addEventListener('click', () => {
-    if (isRunning) {
-        stopTimer();
-        powerButton.innerHTML = '<i class="fa-solid fa-play"></i>';
-    } else {
-        startTimer();
-        powerButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
-    }
-    isRunning = !isRunning;
-});
-
-resetButton.addEventListener('click', () => {
+function resetTimer() {
     stopTimer();
     elapsedTime = 0;
     updateTimerDisplay(elapsedTime);
-    powerButton.innerHTML = '<i class="fa-solid fa-play"></i>';
     isRunning = false;
-    marksList.innerHTML = ''; // Limpa as marcas
+    isPaused = false;
+    powerButton.innerHTML = '<div>Pausar</div>';
+}
+
+powerButton.addEventListener('click', () => {
+    if (isRunning) {
+        if (isPaused) {
+            // Continuar o cronômetro
+            startTimer();
+            powerButton.innerHTML = '<div>Pausar</div>';
+            isPaused = false;
+        } else {
+            // Pausar o cronômetro
+            stopTimer();
+            powerButton.innerHTML = '<div>Iniciar</div>';
+            isPaused = true;
+        }
+    } else {
+        // Iniciar o cronômetro
+        startTimer();
+        powerButton.innerHTML = '<div>Pausar</div>';
+        isRunning = true;
+    }
+});
+
+resetButton.addEventListener('click', () => {
+    resetTimer();
+    powerButton.innerHTML = '<div>Iniciar</div>';
 });
 
 markButton.addEventListener('click', () => {
-    if (isRunning) {
+    if (isRunning && !isPaused) {
         const markTime = timerDisplay.textContent;
         const markElement = document.createElement('p');
         markElement.textContent = `Marca: ${markTime}`;
