@@ -1,39 +1,54 @@
-*{
+/* Define que todos os elementos devem usar o modelo de caixa 'border-box', 
+   o que inclui padding e bordas na largura total do elemento. */
+   * {
     box-sizing: border-box;
 }
 
-section.sub-cabecalho > h1{
+/* Estiliza os títulos (h1) dentro do section com a classe 'sub-cabecalho', 
+   centraliza o texto e define uma margem de 3rem acima e abaixo. */
+section.sub-cabecalho > h1 {
     text-align: center;
     margin: 3rem 0rem;
 }
 
-section.sub-cabecalho > p{
+/* Define a altura da linha do texto para 30px nos parágrafos dentro de 'sub-cabecalho'. */
+section.sub-cabecalho > p {
     line-height: 30px;
 }
 
-section.container{
+/* Limita a largura máxima do container para 1200px e centraliza o container 
+   horizontalmente com margem automática. */
+section.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-section.container-professores{
+/* Define um layout de coluna para o container com a classe 'container-professores'. */
+section.container-professores {
     display: flex;
     flex-direction: column;
 }
 
-section.container-professores > h2{
+/* Estiliza os títulos (h2) dentro de 'container-professores', centraliza o texto 
+   e define uma margem de 2rem acima e abaixo. */
+section.container-professores > h2 {
     text-align: center;
     margin: 2rem 0rem;
 }
 
-section.container-professores > h3{
+/* Estiliza os subtítulos (h3) dentro de 'container-professores', centraliza o texto, 
+   define uma margem superior de 3rem e uma margem inferior de 2rem, além de definir a cor do texto como azul. */
+section.container-professores > h3 {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    color:blue;
+    color: #1F5372 ;
 }
 
-div.professores{
+/* Define um layout de linha para o container com a classe 'professores', com itens 
+   distribuídos igualmente e permite quebra de linha se necessário. Adiciona um espaço de 10px 
+   entre os itens. */
+div.professores {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -41,7 +56,9 @@ div.professores{
     gap: 10px;
 }
 
-div.professores > a{
+/* Estiliza os links dentro de 'professores', adicionando uma borda preta, bordas arredondadas, 
+   padding, centraliza o texto e ajusta a largura para 250px. Utiliza flexbox para centralizar o conteúdo. */
+div.professores > a {
     border: 1px solid black;
     border-radius: 17px;
     padding: 15px;
@@ -52,18 +69,23 @@ div.professores > a{
     justify-content: center;
 }
 
-section.container > h2{
+/* Estiliza os títulos (h2) dentro do section com a classe 'container', centraliza o texto e define uma margem de 4rem acima e abaixo. */
+section.container > h2 {
     text-align: center;
-    margin: 4rem 0rem; 
+    margin: 4rem 0rem;
 }
 
-section.grade-cursinhos{
+/* Define um layout de grid para o section com a classe 'grade-cursinhos', com colunas 
+   que se ajustam automaticamente com um mínimo de 200px e um espaçamento de 40px entre os itens. */
+section.grade-cursinhos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
 }
 
-div.cursinhos{
+/* Estiliza os itens dentro do container com a classe 'cursinhos', adicionando padding, 
+   centraliza o texto, adiciona uma borda preta, bordas arredondadas e uma margem inferior de 2.8rem. */
+div.cursinhos {
     padding: 10px;
     text-align: center;
     border: 1px solid black;
@@ -71,9 +93,38 @@ div.cursinhos{
     margin-bottom: 2.8rem;
 }
 
-img.imagens-cursinhos{
+/* Define a largura das imagens dentro de 'imagens-cursinhos', adiciona padding e margens superior 
+   e inferior de 10px para espaçamento. */
+img.imagens-cursinhos {
     width: 200px;
     padding: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+a.link {
+    color: #fff; /* Cor do texto */
+    background-color: #5C93AA;
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Arial', sans-serif; /* Fonte diferente */
+    font-weight: bold; /* Texto em negrito */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra do texto */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Espaçamento ao redor do texto */
+    display: inline-block; /* Necessário para aplicar padding e border-radius corretamente */
+}
+
+a.link:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+    background-color: #5C93AA; /* Cor de fundo ao passar o mouse */
+    text-shadow: none; /* Remove a sombra do texto ao passar o mouse, se desejar */
+}
+a.link2 {
+    color: #5C93AA; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Arial', sans-serif; /* Fonte diferente */
+    font-weight: bold; /* Texto em negrito */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra do texto */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 5px 10px; /* Espaçamento ao redor do texto */
+    display: inline-block; /* Necessário para aplicar padding e border-radius corretamente */
 }
