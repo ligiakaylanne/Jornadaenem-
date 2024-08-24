@@ -1,7 +1,6 @@
 let timerInterval;
 let elapsedTime = 0;
 let isRunning = false;
-let isPaused = false;
 
 const timerDisplay = document.getElementById('timer');
 const powerButton = document.getElementById('power');
@@ -40,38 +39,29 @@ function resetTimer() {
     elapsedTime = 0;
     updateTimerDisplay(elapsedTime);
     isRunning = false;
-    isPaused = false;
-    powerButton.innerHTML = '<div>Pausar</div>';
+    powerButton.textContent = 'Iniciar';
 }
 
 powerButton.addEventListener('click', () => {
     if (isRunning) {
-        if (isPaused) {
-            // Continuar o cronômetro
-            startTimer();
-            powerButton.innerHTML = '<div>Pausar</div>';
-            isPaused = false;
-        } else {
-            // Pausar o cronômetro
-            stopTimer();
-            powerButton.innerHTML = '<div>Iniciar</div>';
-            isPaused = true;
-        }
+        // Pausar o cronômetro
+        stopTimer();
+        powerButton.textContent = 'Iniciar';
+        isRunning = false;
     } else {
         // Iniciar o cronômetro
         startTimer();
-        powerButton.innerHTML = '<div>Pausar</div>';
+        powerButton.textContent = 'Pausar';
         isRunning = true;
     }
 });
 
 resetButton.addEventListener('click', () => {
     resetTimer();
-    powerButton.innerHTML = '<div>Iniciar</div>';
 });
 
 markButton.addEventListener('click', () => {
-    if (isRunning && !isPaused) {
+    if (isRunning) {
         const markTime = timerDisplay.textContent;
         const markElement = document.createElement('p');
         markElement.textContent = `Marca: ${markTime}`;
