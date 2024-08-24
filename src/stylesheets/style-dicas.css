@@ -1,0 +1,75 @@
+/* Definição de estilos gerais */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal do documento */
+}
+
+* {
+    margin: 0;
+    padding: 0; /* Remove margens e preenchimentos de todos os elementos */
+}
+
+/* Estilo para a marca da navbar */
+.navbar-brand {
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: #0511f2; /* Define a cor do texto como azul */
+}
+
+/* Estilos para espaço reservado de vídeo */
+.video-placeholder {
+    display: flex; /* Define um contêiner flexível para elementos de vídeo */
+}
+
+/* Estilos para cartões personalizados */
+.card-custom {
+    text-align: center; /* Centraliza o texto dentro do cartão */
+    border: 2px solid #000; /* Define uma borda preta ao redor do cartão */
+    border-radius: 10px; /* Aplica cantos arredondados ao cartão */
+    padding: 15px; /* Adiciona espaçamento interno */
+    margin: 10px; /* Adiciona espaçamento externo */
+    transition: transform 0.2s; /* Adiciona uma transição suave para transformações */
+}
+
+.card-custom:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do cartão ao passar o mouse */
+}
+
+.card-custom h5 {
+    font-weight: bold; /* Define o texto em negrito */
+    color: blue; /* Define a cor do texto como azul */
+}
+
+/* Estilos de hover para links da navbar */
+.navbar-nav .nav-link:hover {
+    border-radius: 5px; /* Aplica bordas arredondadas aos links */
+    border: 2px solid #0511f2; /* Adiciona uma borda azul ao passar o mouse */
+    color: #0511f2; /* Muda a cor do texto para azul ao passar o mouse */
+    background-color: #f8f9fa; /* Muda o fundo para uma cor clara ao passar o mouse */
+}
+
+/* Estilo personalizado para a navbar */
+.navbar-custom {
+    display: right; /* Definição incorreta, display não possui "right" como valor */
+    justify-content: space-between; /* Distribui os itens da navbar com espaço entre eles */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+/* Estilo padrão para links da navbar */
+.navbar-nav .nav-link {
+    color: #000; /* Define a cor do texto dos links como preto */
+    padding-right: 10px; /* Adiciona preenchimento à direita dos links */
+}
+
+/* Estilos para diferentes títulos */
+h6 {
+    color: blue; /* Define a cor do texto como azul */
+}
+
+h3 {
+    color: blue; /* Define a cor do texto como azul */
+}
+
+/* Estilos adicionais */
+.agente {
+    margin-left: 50px; /* Adiciona margem à esquerda */
+    padding-bottom: 30px; /* Adiciona preenchimento inferior */
+}
