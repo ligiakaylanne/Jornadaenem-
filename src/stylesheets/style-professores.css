@@ -1,6 +1,7 @@
 /* Define que todos os elementos devem usar o modelo de caixa 'border-box', 
    o que inclui padding e bordas na largura total do elemento. */
-   * {
+
+* {
     box-sizing: border-box;
 }
 
@@ -101,6 +102,7 @@ img.imagens-cursinhos {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 a.link {
     color: #fff; /* Cor do texto */
     background-color: #5C93AA;
@@ -118,6 +120,7 @@ a.link:hover {
     background-color: #5C93AA; /* Cor de fundo ao passar o mouse */
     text-shadow: none; /* Remove a sombra do texto ao passar o mouse, se desejar */
 }
+
 a.link2 {
     color: #5C93AA; /* Cor do texto */
     text-decoration: none; /* Remove o sublinhado */

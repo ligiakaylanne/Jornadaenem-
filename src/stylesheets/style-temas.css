@@ -10,7 +10,6 @@
   
   }
 
-    
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;
@@ -38,19 +37,23 @@
   max-width: 1200px; /* Largura máxima do grid, ajuste conforme necessário */
   margin: 0 auto; /* Centraliza horizontalmente o grid dentro do contêiner pai */
 }
+
 .card-header {
   text-align: center; /* Centraliza o texto*/
   background-color: #1F5372;
   color: #ffff;
 
 }
+
 .card-text{
   color: black;
   text-align: center;
 }
+
 .card-body{
   color: #1F5372;
 }
+
 .card {
   border: 1px solid #1F5372; 
 }

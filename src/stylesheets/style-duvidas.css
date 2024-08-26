@@ -72,8 +72,6 @@ body {
   transform: rotate(180deg);
 }
 
-
-
 .footer-container {
   width: 90%;
   margin: 0 auto;
@@ -109,9 +107,10 @@ body {
 
 @media (max-width: 768px) {
   .faq-item {
-      flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 }
+
 .highlight {
   border: 2px solid #002b9f;
   background-color: #f0f8ff;

@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /* Estilo para a seção com fundo personalizado */
 .bg-custom {
   background-color: #3A728E; /* Azul claro suave */
@@ -51,6 +50,7 @@ body {
 .card {
   max-width: 250px;
   margin: 0 auto;
+  padding-top: 1rem;
   text-align: center;
   background-color: #5C93AA; /* Laranja claro suave */
   color: #ffffff;
@@ -215,10 +215,12 @@ body {
   flex-direction: column;
   
 }
+
 .keyboard{
   width: 18px;
   height: 10px;
 }
+
 .btn.btn-primary {
   background-color: #ffffff;
   color: #0C3756;

@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     overflow-x: hidden; /* Esconde a rolagem horizontal */
 
 }
+
 section.container{
     display: flex;
     flex-wrap: wrap;
@@ -104,10 +106,6 @@ h2 {
     margin-bottom: 40px;
 }
 
-
-
-
-
 .imagem-container {
     display: flex;
     flex-wrap: wrap;
@@ -131,7 +129,6 @@ h2 {
     object-position: center; /* Centraliza o conteúdo da imagem */
     
 }
-
 
 .imagens-membros figcaption {
     margin-top: 10px;
