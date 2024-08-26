@@ -8,11 +8,6 @@ body {
     padding: 0; /* Remove margens e preenchimentos de todos os elementos */
 }
 
-/* Estilo para a marca da navbar */
-.navbar-brand {
-    font-weight: bold; /* Define o peso da fonte como negrito */
-    color: #0511f2; /* Define a cor do texto como azul */
-}
 
 /* Estilos para espaço reservado de vídeo */
 .video-placeholder {
@@ -38,27 +33,6 @@ body {
     color: blue; /* Define a cor do texto como azul */
 }
 
-/* Estilos de hover para links da navbar */
-.navbar-nav .nav-link:hover {
-    border-radius: 5px; /* Aplica bordas arredondadas aos links */
-    border: 2px solid #0511f2; /* Adiciona uma borda azul ao passar o mouse */
-    color: #0511f2; /* Muda a cor do texto para azul ao passar o mouse */
-    background-color: #f8f9fa; /* Muda o fundo para uma cor clara ao passar o mouse */
-}
-
-/* Estilo personalizado para a navbar */
-.navbar-custom {
-    display: right; /* Definição incorreta, display não possui "right" como valor */
-    justify-content: space-between; /* Distribui os itens da navbar com espaço entre eles */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-}
-
-/* Estilo padrão para links da navbar */
-.navbar-nav .nav-link {
-    color: #000; /* Define a cor do texto dos links como preto */
-    padding-right: 10px; /* Adiciona preenchimento à direita dos links */
-}
-
 /* Estilos para diferentes títulos */
 h6 {
     color: blue; /* Define a cor do texto como azul */
@@ -73,3 +47,40 @@ h3 {
     margin-left: 50px; /* Adiciona margem à esquerda */
     padding-bottom: 30px; /* Adiciona preenchimento inferior */
 }
+
+
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .faq-item {
+      flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura disponível */
+    }
+  
+    .footer-container {
+      flex-direction: column; /* Alinha os itens em coluna */
+      align-items: center; /* Centraliza os itens */
+      text-align: center; /* Alinha o texto ao centro */
+    }
+  
+    .footer-social {
+      justify-content: center; /* Centraliza os itens sociais */
+      margin-top: 20px; /* Adiciona margem superior */
+    }
+  }
+  
+  .card-custom {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .card-custom:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .content {
+    display: none;
+    margin-top: 10px;
+  }
+  

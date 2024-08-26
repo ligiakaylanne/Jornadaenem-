@@ -77,44 +77,66 @@ section.nosso-time > h2{
     width: 100%;
 }
 
-section.linha-nosso-time {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.quem-somos, .nossa-missao, .nossa-historia, .nosso-time {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quem-somos p, .nossa-historia p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.nossa-missao, .outra-secao {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 3rem 0rem;
-    gap: 3rem;
-    background-color: #5C93AA;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.imagem-container {
+    display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box; /* Inclui padding e bordas na largura */
-
+    justify-content: space-around;
 }
 
-
-div.imagens{
-    background-color: beige;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    
-
+.imagens {
+    margin-bottom: 20px;
 }
 
-figure.imagens-membros{
-    height: 14rem;
-    padding: 2rem;
-}
-
-figure.imagens-membros > img {
-    border-radius: 100%;
-    width: 7rem;
-    height: 7rem; /* Define uma altura fixa igual à largura */
-}
-
-
-figure.imagens-membros > p{
+.imagens-membros {
     text-align: center;
-    margin: 12px;
-    font-weight: 600;
+    margin: 0 10px;
 }
+
+.imagens-membros img {
+    width: 150px; /* Definindo uma largura fixa */
+    height: 150px; /* Definindo uma altura fixa */
+    border-radius: 50%;
+    object-fit: cover; /* Garante que a imagem seja cortada e não distorcida */
+    object-position: center; /* Centraliza o conteúdo da imagem */
+    
+}
+
+
+.imagens-membros figcaption {
+    margin-top: 10px;
+    color: #333;
+    border: 1px solid black;
+
+}
+
