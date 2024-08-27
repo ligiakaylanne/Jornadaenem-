@@ -122,11 +122,26 @@ body {
   margin-bottom: 20px;
   color: #333;
 }
+/* Contêiner principal */
+.faq-container {
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
 
+/* Título da seção */
+.title-h1-main {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Grade de itens FAQ */
 .faq-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   gap: 20px;
+  align-items: start; /* Garante que cada item alinhe-se ao topo */
 }
 
 /* Estilo para cada item de FAQ */
@@ -135,8 +150,7 @@ body {
   border-radius: 8px; /* Arredonda os cantos */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
   display: flex;
-  margin: 0;
-  padding: 0;
+  flex-direction: column; /* Garante que os itens se expandam de acordo com o conteúdo */
   overflow: hidden;
 }
 
@@ -154,7 +168,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0;
 }
 
 /* Estilo para o ícone da pergunta */
@@ -171,7 +184,6 @@ body {
   font-size: 16px; /* Define o tamanho da fonte */
   color: #333; /* Cor do texto */
   flex-grow: 1; /* Permite que a resposta ocupe o espaço disponível */
-  margin: 0;
 }
 
 /* Estilo para mostrar a resposta */
@@ -188,17 +200,20 @@ body {
 @media (max-width: 768px) {
   .faq-item {
     flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura disponível */
+    margin-bottom: 20px; /* Espaço entre os itens em telas pequenas */
   }
 
-  .footer-container {
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza os itens */
-    text-align: center; /* Alinha o texto ao centro */
+  .faq-question {
+    font-size: 14px; /* Tamanho menor para melhor visualização em telas pequenas */
   }
 
-  .footer-social {
-    justify-content: center; /* Centraliza os itens sociais */
-    margin-top: 20px; /* Adiciona margem superior */
+  .faq-answer {
+    font-size: 14px; /* Texto levemente menor em dispositivos móveis */
+  }
+
+  .keyboard {
+    width: 14px;
+    height: 8px;
   }
 }
 
@@ -209,14 +224,10 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   flex-direction: column;
-  
 }
 
-.keyboard{
+.keyboard {
   width: 18px;
   height: 10px;
 }
