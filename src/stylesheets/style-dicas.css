@@ -81,3 +81,9 @@ h3 {
   display: none;
   margin-top: 10px;
 }
+
+/*tag relacionada a parte dos videos da página*/
+iframe{
+  border-radius: 15px;
+  margin: 3rem 2rem auto;
+}
