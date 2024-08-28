@@ -29,16 +29,16 @@ body {
 
 .card-custom h5 {
   font-weight: bold; /* Define o texto em negrito */
-  color: blue; /* Define a cor do texto como azul */
+  color: #002b9f; /* Define a cor do texto como azul */
 }
 
 /* Estilos para diferentes títulos */
 h6 {
-  color: blue; /* Define a cor do texto como azul */
+  color: #002b9f; /* Define a cor do texto como azul */
 }
 
 h3 {
-  color: blue; /* Define a cor do texto como azul */
+  color: #002b9f; /* Define a cor do texto como azul */
 }
 
 /* Estilos adicionais */
@@ -70,11 +70,13 @@ h3 {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #5C93AA;
+  color: #ffff;
 }
 
 .card-custom:hover {
   background-color: #e9e9e9;
+  color: #000;
 }
 
 .content {
