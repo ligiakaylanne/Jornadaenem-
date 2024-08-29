@@ -76,3 +76,8 @@ body{
         margin-top: 20px;
     }
 }
+.study-time-message {
+    color: #003366; /* Altere para a cor desejada */
+    font-size: 20px; /* Ajuste o tamanho da fonte, se necessário */
+    margin-top: 0.5rem; /* Espaçamento superior */
+}

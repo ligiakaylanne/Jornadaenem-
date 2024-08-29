@@ -136,4 +136,9 @@ h2 {
     border: 1px solid black;
 
 }
+figcaption{
+    background-color: #5C93AA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10px;
+}
 

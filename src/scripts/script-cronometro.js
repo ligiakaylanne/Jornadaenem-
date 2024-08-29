@@ -1,6 +1,8 @@
 let timerInterval;
 let elapsedTime = 0;
 let isRunning = false;
+let markCount = 0; // Contador para rastrear quantas vezes a mensagem foi exibida
+const maxMarks = 5; // Limite máximo de exibições
 
 const timerDisplay = document.getElementById('timer');
 const powerButton = document.getElementById('power');
@@ -40,14 +42,28 @@ function resetTimer() {
     updateTimerDisplay(elapsedTime);
     isRunning = false;
     powerButton.textContent = 'Iniciar';
+    markCount = 0; // Resetar o contador ao zerar o cronômetro
+    marksList.innerHTML = ''; // Limpar as mensagens exibidas
+}
+
+function displayStudyTime(message) {
+    if (markCount < maxMarks) {
+        const markTime = timerDisplay.textContent;
+        const markElement = document.createElement('p');
+        markElement.textContent = `${message} ${markTime}`;
+        markElement.classList.add('study-time-message'); // Adiciona a classe CSS para estilizar a mensagem
+        marksList.appendChild(markElement);
+        markCount++; // Incrementa o contador após exibir uma nova mensagem
+    }
 }
 
 powerButton.addEventListener('click', () => {
     if (isRunning) {
-        // Pausar o cronômetro
+        // Pausar o cronômetro e exibir a mensagem
         stopTimer();
         powerButton.textContent = 'Iniciar';
         isRunning = false;
+        displayStudyTime('Você estudou por');
     } else {
         // Iniciar o cronômetro
         startTimer();
@@ -62,9 +78,6 @@ resetButton.addEventListener('click', () => {
 
 markButton.addEventListener('click', () => {
     if (isRunning) {
-        const markTime = timerDisplay.textContent;
-        const markElement = document.createElement('p');
-        markElement.textContent = `Marca: ${markTime}`;
-        marksList.appendChild(markElement);
+        displayStudyTime('Você estudou por');
     }
 });

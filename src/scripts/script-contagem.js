@@ -1,5 +1,5 @@
 // Defina a data de término da oferta especial (ano, mês (0-11), dia, hora, minuto, segundo)
-var endDateTime = new Date(2024, 11, 4, 0, 0, 0); // 25 de junho de 2024 às 00:00
+var endDateTime = new Date(2024, 11, 3, 0, 0, 0); // 
 
 // Função para atualizar a contagem regressiva
 function updateCountdown() {

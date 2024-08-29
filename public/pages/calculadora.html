@@ -59,25 +59,25 @@
         <div class="form-row">
           <div class="form-group">
             <label for="linguagens">Linguagens:</label>
-            <input type="number" id="linguagens" required>
+            <input type="number" id="linguagens" oninput="validateInput(this)" required>
           </div>
           <div class="form-group">
             <label for="natureza">Ciências da Natureza:</label>
-            <input type="number" id="natureza" required>
+            <input type="number" id="natureza" oninput="validateInput(this)" required>
           </div>
           <div class="form-group">
             <label for="redacao">Redação:</label>
-            <input type="number" id="redacao" required>
+            <input type="number" id="redacao" oninput="validateInput(this)" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label for="matematica">Matemática:</label>
-            <input type="number" id="matematica" required>
+            <input type="number" id="matematica" oninput="validateInput(this)" required>
           </div>
           <div class="form-group">
             <label for="humanas">Ciências Humanas:</label>
-            <input type="number" id="humanas" required>
+            <input type="number" id="humanas" oninput="validateInput(this)" required>
           </div>
         </div>
         <button type="button" onclick="calculateScore()">Calcular</button>
@@ -85,6 +85,7 @@
       <h4 id="result">Resultado:</h4>
       <br>
     </div>
+    
   </div>
 
     <br><br><br><br>

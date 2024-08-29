@@ -1,5 +1,11 @@
+function validateInput(input) {
+    // Limita a entrada a no máximo 5 dígitos
+    if (input.value.length > 5) {
+        input.value = input.value.slice(0, 5);
+    }
+}
+
 function calculateScore() {
-    
     // Obtém os valores dos inputs
     const linguagens = parseFloat(document.getElementById('linguagens').value);
     const matematica = parseFloat(document.getElementById('matematica').value);
@@ -13,9 +19,8 @@ function calculateScore() {
         return;
     }
 
-    //verifica se todas as notas sao >= 0 e <= 1000, caso sim faz a operacao
-    if(linguagens >= 0 && linguagens <= 1000 && matematica >= 0 && matematica <= 1000 && natureza >= 0 && natureza <= 1000 && humanas >= 0 && humanas <= 1000 && redacao >= 0 && redacao <= 1000){
-
+    // Verifica se todas as notas são >= 0 e <= 1000
+    if (linguagens >= 0 && linguagens <= 1000 && matematica >= 0 && matematica <= 1000 && natureza >= 0 && natureza <= 1000 && humanas >= 0 && humanas <= 1000 && redacao >= 0 && redacao <= 1000) {
         // Calcula a nota total (simples média aritmética)
         const totalScore = (linguagens + matematica + natureza + humanas + redacao) / 5;
 
@@ -24,6 +29,6 @@ function calculateScore() {
         return;
     }
     
-    alert("Notas inválidas, apenas são permitidas notas de 0 a 1000");
+    alert("Notas inválidas, apenas são permitidas notas de 0 a 1000.");
     return;
 }
