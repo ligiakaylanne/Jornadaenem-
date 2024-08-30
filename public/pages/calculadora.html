@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="\src\stylesheets\style-calculadora.css">
+    <link rel="stylesheet" href="\src\stylesheets\style-padrao.css">
+    <script src="\src\scripts\script-calculadora.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid navbar-custom">
+      <a class="navbar-brand" href="/index.html">Jornada Enem</a>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="\public\pages\provas.html">Provas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="\public\pages\calculadora.html">Calculadora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="\public\pages\cronometro.html">Cronômetro</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Redação
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="\public\pages\professores.html">Professores</a>
+              </li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="\public\pages\dicas.html">Dicas</a></li>
+                <li><a class="dropdown-item" href="#">Folha em PDF</a></li>
+                <li><a class="dropdown-item" href="\public\pages\temas-redacoes.html">Temas</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br><br>
+
+  
+    <h2 class="text-center">Calcule sua nota do Enem aqui:</h2>
+
+    <!-- Card para a calculadora -->
+    <div class="card1">
+      <form id="calculator-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="linguagens">Linguagens:</label>
+            <input type="number" id="linguagens" oninput="validateInput(this)" required>
+          </div>
+          <div class="form-group">
+            <label for="natureza">Ciências da Natureza:</label>
+            <input type="number" id="natureza" oninput="validateInput(this)" required>
+          </div>
+          <div class="form-group">
+            <label for="redacao">Redação:</label>
+            <input type="number" id="redacao" oninput="validateInput(this)" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="matematica">Matemática:</label>
+            <input type="number" id="matematica" oninput="validateInput(this)" required>
+          </div>
+          <div class="form-group">
+            <label for="humanas">Ciências Humanas:</label>
+            <input type="number" id="humanas" oninput="validateInput(this)" required>
+          </div>
+        </div>
+        <button type="button" onclick="calculateScore()">Calcular</button>
+      </form>
+      <h4 id="result">Resultado:</h4>
+      <br>
+    </div>
+    
+  </div>
+
+    <br><br><br><br>
+    <div class="container">
+    <h4>Saiba como funciona a Calculadora:</h4>
+    <p>
+        A calculadora de notas do ENEM é uma ferramenta prática para estudantes que desejam ter uma ideia clara de sua pontuação final no Exame Nacional do Ensino Médio. Ela permite que você insira suas notas nas diferentes áreas do exame e obtenha uma estimativa do seu desempenho total.
+    </p>
+
+    <h4>Como Usar a Calculadora:</h4>
+    <p>
+        <strong>1. Insira Suas Notas:</strong> Basta digitar as notas que você obteve ou espera obter em cada uma das cinco áreas avaliadas no ENEM: <strong>Linguagens, Matemática, Ciências da Natureza, Ciências Humanas e Redação</strong>.
+    </p>
+    <p>
+        <strong>2. Veja o Resultado:</strong> Após inserir todas as notas, a calculadora faz a soma dessas pontuações para fornecer uma estimativa da sua nota total no ENEM.
+    </p>
+    <p>
+        <strong>3. Entenda Seu Desempenho:</strong> Com essa nota total, você pode ter uma ideia mais clara de como se saiu no exame e se aproximar do resultado necessário para ingressar no curso desejado.
+    </p>
+
+    <h4>Por que Usar a Calculadora?</h4>
+    <p>
+        A calculadora de notas do ENEM é uma maneira simples e rápida de verificar sua performance e planejar seus próximos passos, seja para entender suas chances em um processo seletivo ou para ajustar sua preparação para futuras provas.
+    </p>
+  </div>
+  
+  <br><br><br>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Jornada Enem</h2>
+            <p>Quer ficar por dentro das novidades inovadoras e exclusivas, e ainda ver conteúdos incríveis? Então siga-nos nas redes sociais!</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links Úteis</h3>
+            <ul>
+              <li><a href="\public\pages\home.html">>Home</a></li>
+              <li><a href="\public\pages\sobre.html">>Sobre Nós</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contate-Nos</h3>
+            <ul>
+                <li>>Rua De ...</li>
+                <li>>+55 (83) 9-8888-8888</li>
+                <li><a href="mailto:Email@algumacoisa.com">Email@Algumacoisa.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="https://www.instagram.com/jornada__enem?igsh=YTJ6bXNi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" target="_blank" rel="noopener"><img src="\public\imagens\rodape\3dac2f11fa95efd036fa4e9ef2777be9.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="\public\imagens\rodape\94d1d65be911125037040607554fdb31.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
